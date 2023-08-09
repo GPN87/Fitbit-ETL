@@ -86,7 +86,7 @@ def fetch_and_save_fitbit_data():
     session.commit()
     session.close()    
 
-#THIS SCHEDULES THE FUNCTION TO RUN EVERY DAY AT 11:59PM ON AN INFINTE LOOP
+#THIS SCHEDULES THE FUNCTION TO RUN EVERY DAY AT 11:55PM ON AN INFINTE LOOP
 schedule.every().day.at("23:55").do(fetch_and_save_fitbit_data)
 
 while True:
