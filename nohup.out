@@ -1,0 +1,88 @@
+fitbit_requester.py:11: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+Traceback (most recent call last):
+  File "fitbit_requester.py", line 90, in <module>
+    schedule.every(5).minutes.at("14:35").do(fetch_and_save_fitbit_data)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/schedule/__init__.py", line 528, in at
+    "Invalid time format for a minutely job (valid format is :SS)"
+schedule.ScheduleValueError: Invalid time format for a minutely job (valid format is :SS)
+fitbit_requester.py:11: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+Traceback (most recent call last):
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connection.py", line 424, in connect
+    tls_in_tls=tls_in_tls,
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/connection.py", line 424, in connect
+    tls_in_tls=tls_in_tls,
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "fitbit_requester.py", line 93, in <module>
+    schedule.run_pending()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/schedule/__init__.py", line 822, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/schedule/__init__.py", line 693, in run
+    ret = self.job_func()
+  File "fitbit_requester.py", line 81, in fetch_and_save_fitbit_data
+    heart_response=requests.get(f'{url}{request}',headers=header).json()
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/gavinpayne/opt/anaconda3/envs/PythonData2/lib/python3.7/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))

@@ -87,7 +87,7 @@ def fetch_and_save_fitbit_data():
     session.close()    
 
 #THIS SCHEDULES THE FUNCTION TO RUN EVERY DAY AT 11:55PM ON AN INFINTE LOOP
-schedule.every().day.at("23:55").do(fetch_and_save_fitbit_data)
+schedule.every(1).days.at("22:55").do(fetch_and_save_fitbit_data)
 
 while True:
     schedule.run_pending()
